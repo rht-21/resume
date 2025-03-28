@@ -42,21 +42,9 @@ jobs:
       - name: Git add
         run: git add resume.pdf
 
-      - name: Configure Git
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@users.noreply.github.com"
-
-      - name: Checkout gh-pages branch
-        run: |
-          git fetch origin gh-pages:gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: build
-          clean: true
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
