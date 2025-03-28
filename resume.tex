@@ -1,3 +1,9 @@
+%-------------------------
+% Resume in Latex
+% Author : Souvik Kar Mahapatra
+% License: MIT  
+%------------------------
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -7,35 +13,24 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks,colorlinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{xcolor}
-\input{glyphtounicode}
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
 \usepackage{charter}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.7in}
-\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -46,10 +41,9 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-3pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -59,12 +53,19 @@
     {#1 \vspace{-2pt}}
   }
 }
+
 \hypersetup{%
-     colorlinks=true,
-     linkcolor=blue,
-     filecolor=blue,
-     citecolor = black,      
-     urlcolor=teal,
+    colorlinks=false,
+    linkcolor=black,
+    filecolor=black,      
+    citecolor=black,      
+    urlcolor=black,
+    pdfborder={0 0 0},
+}
+
+% New command for links with underline and new tab
+\newcommand{\resumeLink}[2]{%
+  \href{#1}{\underline{#2}}%
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -75,13 +76,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -89,14 +83,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,103 +96,101 @@
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
-	\textbf{\Huge \scshape Rohit Mishra} \\ \vspace{1pt}
-    \href{tel:+919934086685}{\underline{+919934086685}} $|$
-	\href{mailto:iamrht21@gmail.com}{\underline{iamrht21@gmail.com}} $|$ 
-	\href{https://linkedin.com/in/rht21}{\underline{LinkedIn}} $|$
-	\href{https://github.com/rht-21}{\underline{GitHub}} $|$
-	\href{https://rht21.xyz}{\underline{Portfolio}}		    
+    \textbf{\Huge \scshape Souvik Kar Mahapatra} \\ \vspace{1pt}
+    \resumeLink{mailto:souvikat001@gmail.com}{souvikat001@gmail.com} $|$ 
+    \resumeLink{https://linkedin.com/in/souvik-kar-mahapatra}{linkedin.com/in/souvik-kar-mahapatra} $|$
+    \resumeLink{https://github.com/souvikinator}{github.com/souvikinator}    
 \end{center}
-
-%-----------PROFESSIONAL SUMMARY-----------
-\section{Professional Summary}
-\resumeSubHeadingListStart
-\resumeItemListStart
-    \resumeItem {Results-driven Software Developer with \textbf{1.5 years of professional experience} in designing, developing, and deploying \textbf{scalable and high-performance} web applications.}
-    \resumeItem {Proficient in \textbf{JavaScript, TypeScript, and Python}, with expertise in modern front-end frameworks like \textbf{React.js}, \textbf{Next.js}, and \textbf{Tailwind CSS}.}
-    \resumeItem {Experienced in \textbf{building user-centric solutions}, optimizing application performance, and implementing \textbf{secure authentication} and \textbf{responsive design} best practices.}
-    \resumeItem {Strong collaborator in \textbf{agile environments}, working with cross-functional teams to deliver innovative and maintainable solutions.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-		\textbf{Languages}{: JavaScript, TypeScript, Python} \\
-		\textbf{Databases}{: PostgreSQL, MongoDB} \\
-		\textbf{Frameworks \& Libraries}{: Next.js, React.js, Node.js}}}
-\end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Nira Tech And Solutions}{Remote}
-{Web Developer}{Feb 2024 -- Present}
+{Meshery / Layer5}{Remote}
+{Open Source Contributor \& Maintainer}{Dec 2024 -- Jan 2025}
 \resumeItemListStart
-    \resumeItem {Develop and maintain user-friendly web applications, improving usability and performance for client-facing platforms.}
-    \resumeItem {Build responsive, pixel-perfect UI using React.js and Tailwind CSS, ensuring design consistency and high-quality user experiences.}
-    \resumeItem {Collaborate with clients and designers to develop user-focused solutions, meeting project requirements and deadlines.}
-    \resumeItem {Integrate APIs and manage data retrieval, enhancing frontend functionality and ensuring seamless communication with backend services.}
+\resumeItem{Maintained core components of \textbf{Meshery Server, Meshkit, and Meshery Cloud} and documentation, ensuring scalability and performance.}
+\resumeItem{Revamped the \textbf{GitHub Import Wizard}, improving UX, performance, and eliminating import failures by \textbf{100\%}.}
+\resumeItem{Fixed the \textbf{Model Generation Pipeline}, enabling \textbf{~100+ seamless integrations}, better GitHub repos and Helm Charts suppport.}
+\resumeItem{Reviewed \textbf{20+ PRs}, and engaged with the open-source community.}
 \resumeItemListEnd
-
-% \resumeSubheading
-% {Addzet Advertising \& Media Pvt. Ltd.}{Bhubaneswar, India}
-% {Jr. Web Developer}{Feb 2023 -- Jan 2024}
-% \resumeItemListStart
-%     \resumeItem {Designed and developed \textbf{responsive websites} for clients, ensuring seamless user experiences across devices.}
-%     \resumeItem {Enhanced \textbf{UI/UX designs} by translating wireframes into high-quality code, improving user satisfaction.}
-%     \resumeItem {Collaborated with cross-functional teams to align \textbf{frontend designs} with client branding and requirements.}
-%     \resumeItem {Optimized \textbf{interactive elements} using modern \textbf{CSS techniques} and \textbf{JavaScript libraries}, increasing engagement.}
-%     \resumeItem {Worked on basic \textbf{backend integration} for user authentication and data handling.}
-% \resumeItemListEnd
 
 \resumeSubheading
-{HighRadius}{Bhubaneswar, India}
-{Trainee - Highako}{May 2023 -- Nov 2023}
+{Zero}{Bengaluru}
+{Co-Founder \& CTO}{Jun 2024 -- Nov 2024}
 \resumeItemListStart
-    \resumeItem {Refactored and optimized key features, improving processing efficiency by ~20\% through debugging and scalable development practices.}
-    \resumeItem {Developed automation tools, including email parsing from EML files and currency formatting (e.g., USD 32), reducing manual effort.}
-    \resumeItem {Collaborated in an agile team, resolving issues proactively and meeting tight deadlines.}
+\resumeItem{Led the technical development of {\resumeLink{https://seoautolink.com}{SEOAutoLink.com}}, implementing automated link discovery and insertion that boosted client SEO rankings by \textbf{25\%} and \textbf{NLP \& RAG-based keyword mapping} with \textbf{85\%} accuracy across languages.}
+\resumeItem{Engineered a high-performance, scalable infrastructure, reducing script load times by \textbf{40\%} and processing \textbf{3K-5K} posts with \textbf{99\%} uptime and \textbf{2-3s} per post.}
+\resumeItem{Leveraged user behavior analytics to iteratively enhance product features, resulting in a \textbf{30\%} increase in conversions.}
 \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+\resumeSubheading
+{GoComet}{Bengaluru}
+{Backend Developer Intern}{Feb 2024 -- Aug 2024}
+\resumeItemListStart
+\resumeItem{Refactored the detention and demurrage module, fixing edge cases and implementing combined fee calculations.}
+\resumeItem{Optimized SQL queries using \textbf{New Relic}, reducing execution time by \textbf{20-30\%}.}
+\resumeItem{Automated data transfer and file parsing with \textbf{Python} and \textbf{Shell}, cutting manual effort by \textbf{70\%}.}
+\resumeItem{Developed and integrated a \textbf{Slack} support workflow to track team responsibilities, improving transparency.}
+\resumeItemListEnd
+
+\resumeSubheading
+{OpenInApp/Listed}{Bangalore}
+{Backend Developer}{Jul 2023 -- Jan 2024}
+\resumeItemListStart
+\resumeItem{Engineered \textbf{Shopify} in-app browser redirection and attribution, increasing conversions \textbf{11x} with \textbf{90-95\%} accuracy.}
+\resumeItem{Built an image-based product discovery platform processing \textbf{10K+} daily searches via \textbf{RabbitMQ} and pub-sub, reducing request failures by \textbf{75\%}.}
+\resumeItem{Led \textbf{Docker} adoption and database migration strategies, cutting deployment time and manual work by \textbf{60\%}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Digital Product School}{Remote}
+{Software Engineer}{Sept 2022 -- Mar 2023}
+\resumeItemListStart
+\resumeItem{Developed a data platform for \resumeLink{https://pfaff-mold.de}{pfaff-mold.de} to automate industrial machine data collection, reducing manual work by \textbf{70\%}.}
+\resumeItem{Designed a time-series data pipeline handling \textbf{1K+ sensor readings/s} with \textbf{MQTT} and \textbf{Cassandra}.}
+\resumeItem{Made a real-time monitoring dashboard in \textbf{React} that speeds up data analysis by \textbf{80\%} and helps with maintenance.}
+\resumeItemListEnd
+
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-
+              
 \resumeProjectHeading
-{\textbf{\href{https://snipster.rht21.xyz}{Snipster}}{ [ Next.js, MongoDB, Clerk ]}}{Dec 2024}
+{\textbf{\resumeLink{https://github.com/souvikinator/notion-to-md}{notion-to-md}} {[ TypeScript, Node.js ]}}{Dec 2021 -- Present}
 \resumeItemListStart
-    \resumeItem {Developed \textbf{Snipster}, a code snippet management tool to help developers store, organize, and access their code snippets efficiently.}
-    \resumeItem {Built a responsive and \textbf{user-friendly interface} with \textbf{Next.js}, providing features like quick search, categorization, and management of snippets.}
-    \resumeItem {Integrated \textbf{authentication using Clerk}, ensuring secure login and user management.}
-    \resumeItem {Utilized \textbf{MongoDB} for database storage, enabling fast retrieval and secure storage of user snippets.}
+\resumeItem{Powerful and extensible Notion content conversion engine with a plugin-based architecture, enabling seamless export to multiple formats.}
+\resumeItem{Maintaining an actively growing open-source project with \textbf{60K+} weekly NPM downloads, \textbf{1.3K+} GitHub stars, and \textbf{30+} merged PRs.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{\href{https://nexa-vc.vercel.app}{Nexa}}{ [Next.js, Stream, Clerk ]}}{April 2024}
+\resumeProjectHeading  
+{\textbf{\resumeLink{https://github.com/souvikinator/lsx}{lsx (ls-Xtended)}} {[ Go, Shell ]}}{Oct 2021}
 \resumeItemListStart
-    \resumeItem {Created an \textbf{intuitive video conferencing app} with features like secure authentication, high-quality video calls, and meeting management.}
-    \resumeItem {Implemented \textbf{Clerk} for user authentication, ensuring secure login and access control.}
-    \resumeItem {Integrated \textbf{Stream} for high-quality video calls, optimizing the user experience during meetings.}
-    \resumeItem {Key features include \textbf{meeting creation}, scheduling, joining, recording, and \textbf{screen sharing} for enhanced collaboration.}
+\resumeItem{Terminal navigation tool in \textbf{Go} with directory aliasing and smart ranking, reducing navigation time by 70\%.}
+\resumeItem{Garnered \textbf{170+} stars on GitHub.}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: JavaScript, TypeScript, Go, Python, Shell, C++, C} \\
+        \textbf{Databases}{: PostgreSQL, MongoDB, Redis, Cassandra} \\
+        \textbf{Frameworks/Libraries}{: Node.js, React, Next.js, Express} \\  
+        \textbf{Tools/Platforms}{: AWS, Docker, Nginx, RabbitMQ, GitHub Actions}
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------  
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Kalinga Institute of Industrial Technology}{Bhubaneshwar, Odissa}
-{B.Tech in Information Technology}{2020 -- 2024}
+{B.Tech in Information Technology, \textbf{8.2 CGPA}}{2020 -- 2024}
 \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
 \end{document}
