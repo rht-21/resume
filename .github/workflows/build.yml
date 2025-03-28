@@ -47,11 +47,10 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "github-actions@users.noreply.github.com"
 
-      - name: Checkout gh-pages branch
+      - name: Create gh-pages branch if not exists
         run: |
-          git fetch origin gh-pages:gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages
+          git fetch origin
+          git checkout -b gh-pages || git checkout gh-pages
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
