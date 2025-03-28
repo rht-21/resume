@@ -49,13 +49,14 @@ jobs:
 
       - name: Checkout gh-pages branch
         run: |
-          git fetch origin
-          git checkout gh-pages || git checkout -b gh-pages
+          git fetch origin gh-pages:gh-pages
+          git checkout gh-pages
+          git pull origin gh-pages
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # Use token instead of github_token
-          branch: gh-pages
-          folder: build
-          clean: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
