@@ -26,7 +26,7 @@
 \usepackage{ragged2e}
 
 \usepackage{xcolor}
-\hypersetup{colorlinks,urlcolor=teal}
+\hypersetup{colorlinks,urlcolor=black}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -116,12 +116,11 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\raggedright \begin{itemize} \vspace{0pt}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -134,97 +133,95 @@
 \begin{center}
     {\Huge \scshape Rohit Mishra} \\ \vspace{1pt}
     \vspace{5pt}
-    \raisebox{0\height}\faPhone\ \href{tel:+919934086685}{9934086685} ~
-    \raisebox{0\height}\faEnvelope\ \href{mailto:iamrht21@gmail.com}{ iamrht21@gmail.com} ~ 
-    \raisebox{0\height}\faLinkedin\ \href{https://www.linkedin.com/in/rht21/}{ linkedin.com/in/rht21}  ~
-    \raisebox{0\height}\faGithub\ \href{https://github.com/rht-21}{ github.com/rht-21}
+    \href{tel:+919934086685}{9934086685} $|$
+    \href{mailto:rohit.mishra.x21@gmail.com}{ rohit.mishra.x21@gmail.com} $|$
+    \href{https://www.linkedin.com/in/rht21/}{ linkedin.com/in/rht21} $|$
+    \href{https://rht21.xyz}{ rht21.xyz}
     \vspace{-8pt}
 \end{center}
 
-
 %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
-\small{Passionate Developer with expertise in React.js, Next.js, Tailwind CSS, and Python, focused on building scalable, high-performance, and AI-driven web applications. Skilled in API integration, performance optimization, and security-first development. Experience in collaborating with cross-functional teams to deliver robust solutions in Agile environments. Proven ability to enhance application efficiency, reduce load times, and improve user experience through optimized code and system design.}
+\small{Software Developer skilled in building scalable, high-performance web applications using JavaScript, React.js, Next.js, and Python. Skilled in API integration, UI optimization, and delivering secure, responsive digital products. Proven ability to reduce load times, enhance user satisfaction, and drive system efficiency through clean code and thoughtful architecture. Collaborative and adaptable in Agile teams, blending design thinking with technical execution to build intuitive, user-centered solutions that meet user needs.}
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
+\vspace{-10pt}
 
-  \resumeSubheading
-      {Nira Tech and Solutions}{Oct 2024 -- present}
-      {Web Developer}{Remote}
-      % \vspace{-8pt}
-      \resumeItemListStart
-        \resumeItem{Developed and maintained high-performance, user-friendly \textbf{web applications}, resulting in a \textbf{~20\% increase} in client engagement.}
-        \resumeItem{Integrated \textbf{REST APIs} and optimized \textbf{data retrieval}, reducing \textbf{API response time by 30\%}.}
-        \resumeItem{Worked closely with clients and \textbf{cross-functional teams} to design and deliver scalable solutions, \textbf{improving user satisfaction by 70\%.}}
-      \resumeItemListEnd
-
-    \vspace{3pt}
-
-    \resumeSubheading
-      {Defensium Labs}{Jan 2024 -- Oct 2024}
-      {Software Developer}{Remote}
-      % \vspace{-8pt}
-      \resumeItemListStart
-        \resumeItem{Led a team of developers, \textbf{coordinating tasks} and ensuring the timely delivery of \textbf{high-quality software} solutions.}
-        \resumeItem{Developed \textbf{CyberBharat Foundation} and \textbf{DefenderX} using \textbf{Next.js}, \textbf{Tailwind CSS}, \textbf{Clerk}, and \textbf{MongoDB}, focusing on authentication, responsiveness, and security assessment.}
-        \resumeItem{Optimized performance and responsiveness in \textbf{CyberBharat Foundation} and \textbf{DefenderX}, reducing \textbf{load times by 40\%} and enhancing \textbf{overall user experience}.}
-      \resumeItemListEnd
-
-    \vspace{3pt}
-    
-    \resumeSubheading
-    {HighRadius }{May 2023 -- Nov 2023}
-    {Trainee - Highako}{Bhubaneswar, India}
-    % \vspace{-8pt}
-    \resumeItemListStart
-        \resumeItem{Refactored and optimized \textbf{key features}, improving \textbf{processing efficiency by ~30\%} through \textbf{debugging} and \textbf{scalable development}.}
-        \resumeItem{Developed \textbf{automation tools}, including \textbf{email parsing from EML files} and \textbf{currency formatting}, reducing \textbf{manual effort by ~70\%}.}
-        \resumeItem{Collaborated in an \textbf{Agile development team}, proactively resolving \textbf{60\% of reported issues ahead of schedule}, improving \textbf{project efficiency}.}
-    \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-2pt}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{Intervue} $|$ \emph{Next.js, Firebase, Tailwind CSS, Gemini, Vapi}  $|$ \href{https://intervue.rht21.xyz}{Live}}{March 2025}
-            \vspace{-8pt}
-            \resumeItemListStart
-                \resumeItem{Built an \textbf{AI-driven interview preparation platform} with \textbf{custom interviews}, \textbf{real-time AI feedback}, and \textbf{automated question generation}.}
-                \resumeItem{Enhanced \textbf{user experience} with a \textbf{responsive UI} using \textbf{Tailwind CSS} and implemented \textbf{secure authentication} with \textbf{Firebase}.}
-                \resumeItem{Optimized \textbf{API performance} by leveraging \textbf{Promises} for \textbf{concurrent data fetching}, reducing \textbf{query response time by 30\%}.}
-            \resumeItemListEnd
-        
-        \resumeProjectHeading
-            {\textbf{Snipster} $|$ \emph{Next.js, Clerk, Tailwind CSS, MongoDB}  $|$ \href{https://snipster.rht21.xyz}{Live}}{December 2024}
-            \vspace{-8pt}
-            \resumeItemListStart
-                \resumeItem{Developed a \textbf{code snippet management tool} that enables developers to efficiently \textbf{store}, \textbf{organize}, \textbf{retrieve}, and \textbf{share} reusable code snippets.}
-                \resumeItem{Designed an \textbf{intuitive user interface} using \textbf{Tailwind CSS} to ensure seamless navigation and \textbf{accessibility}.}
-                \resumeItem{Optimized \textbf{database queries} for faster snippet retrieval, reducing \textbf{load time by 40\%}.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
      \textbf{Languages}{: JavaScript, TypeScript, Python} \\
      \vspace{1pt}
-     \textbf{Databases}{: PostgreSQL, MongoDB} \\
+     \textbf{Databases}{: SQL, PostgreSQL, MongoDB} \\
      \vspace{1pt}
-     \textbf{Frameworks}{: Next.js, React.js, Node.js} \\
+     \textbf{Frameworks}{: Next.js, React.js, Tailwind CSS} \\
      \vspace{1pt}
-     \textbf{Tools/Platforms}{: Git, GitHub Actions} \\
-    }}
+     \textbf{Tools/Platforms}{: Git, GitHub Actions, AWS, Figma, Firebase, Clerk} }}
  \end{itemize}
- \vspace{-16pt}
+ 
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Nira Tech and Solutions}{October 2024 -- present}
+      {Web Developer}{Remote}
+      % \vspace{-8pt}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained reliable, responsive and user-friendly \textbf{web applications}, resulting in a \textbf{20\% increase} in client engagement.}
+        \resumeItem{Integrated \textbf{REST APIs}, optimized \textbf{data fetching}, and leveraged \textbf{Amazon S3} for static asset storage—reducing \textbf{API response time by 30\%} and improving overall application performance.}
+        \resumeItem{Collaborated with clients and \textbf{cross-functional teams} to deliver  \textbf{scalable solutions}, leading to a \textbf{70\% improvement} in user satisfaction.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Defensium Labs}{January 2024 -- October 2024}
+      {Software Developer}{Remote}
+      % \vspace{-8pt}
+      \resumeItemListStart
+        \resumeItem{Led a \textbf{4-member team} to build \textbf{secure applications} from scratch, managing \textbf{timelines}, \textbf{feature scoping}, and \textbf{code reviews}.}
+        \resumeItem{Built \textbf{Cyber Bharat Foundation} and \textbf{DefenderX} using \textbf{Next.js}, \textbf{Tailwind CSS}, \textbf{Clerk}, and \textbf{MongoDB}, focusing on \textbf{secure authentication}, \textbf{responsive UI}, and \textbf{penetration testing} capabilities.}
+        \resumeItem{Enhanced application \textbf{performance} and \textbf{responsiveness}, reducing \textbf{load times by 40\%} and improving overall \textbf{user experience}.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {HighRadius }{May 2023 -- November 2023}
+    {Trainee - Highako}{Bhubaneswar, India}
+    % \vspace{-8pt}
+    \resumeItemListStart
+      \resumeItem{Refactored and enhanced existing \textbf{features}, increasing \textbf{processing efficiency by 30\%}.}
+      \resumeItem{Automated \textbf{email parsing (EML)} and \textbf{currency conversion workflows}, reducing \textbf{manual effort by 70\%} and accelerating operations.}
+      \resumeItem{Resolved \textbf{60\% of reported bugs} ahead of deadlines as part of an \textbf{Agile team}, accelerating \textbf{project timelines} and boosting \textbf{team productivity}.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-2pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Intervue} $|$ \emph{Next.js, Firebase, Tailwind CSS, Gemini, Vapi}  $|$ \href{https://intervue.rht21.xyz}{intervue.rht21.xyz}}{March 2025}
+            \vspace{-8pt}
+            \resumeItemListStart
+              \resumeItem{Built an \textbf{AI-powered interview preparation platform} enabling \textbf{custom interviews}, \textbf{real-time feedback}, and \textbf{auto-generated questions}.}
+              \resumeItem{Implemented \textbf{secure authentication} using \textbf{Firebase} and designed a fully \textbf{responsive UI} with \textbf{Tailwind CSS}.}
+              \resumeItem{Refactored \textbf{API calls} with \textbf{concurrent data fetching} and \textbf{Promises}, resolving major \textbf{performance bottlenecks} and improving load times.}
+            \resumeItemListEnd
+        \vspace{-16pt}
+        \resumeProjectHeading
+            {\textbf{Snipster} $|$ \emph{Next.js, Clerk, Tailwind CSS, MongoDB}  $|$ \href{https://snipster.rht21.xyz}{snipster.rht21.xyz}}{December 2024}
+            \vspace{-8pt}
+            \resumeItemListStart
+              \resumeItem{Developed a \textbf{full-stack application} for storing, organizing, and sharing \textbf{reusable code snippets}.}
+              \resumeItem{Designed a \textbf{responsive} and \textbf{accessible user interface} using \textbf{Tailwind CSS}, focusing on \textbf{intuitive navigation} and \textbf{cross-device compatibility}.}
+              \resumeItem{Implemented \textbf{secure authentication} with \textbf{Clerk} and optimized \textbf{MongoDB queries} for faster \textbf{data retrieval}.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-16pt}
 
 %----------EDUCATION--------------------
 \section{Education}
@@ -233,6 +230,13 @@
       {Kalinga Institute of Industrial Technology}{August '20 -- June '24}
       {Bachelor of Technology in Information Technology}{Bhubaneshwar, India}
   \resumeSubHeadingListEnd
+
+%----------CERTIFICATIONS--------------------
+\section{Certifications}
+\resumeItemListStart
+  \resumeItem{\textbf{Google UX Design Professional Certificate (Coursera)}}
+  \resumeItem{\textbf{AWS Academy Graduate – Introduction to Cloud (Semester 1)}}
+\resumeItemListEnd
 
 
 \end{document}
